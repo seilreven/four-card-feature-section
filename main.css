@@ -32,7 +32,7 @@ body {
 /* main */
 main {
   min-height: 90vh;
-  width: 70%;
+  width: 80%;
   max-width: 1330px;
   display: flex;
   flex-direction: column;
@@ -42,30 +42,32 @@ main {
 
 main .main-header {
   text-align: center;
-  max-width: 35%;
+  max-width: 45%;
+  margin-top: 80px;
 }
 
 main .main-header h1 {
+  font-size: 2.2rem;
   font-weight: 200;
   color: var(--veryDarkBlue);
 }
 
 main .main-header h2 {
-  font-size: 2rem;
+  font-size: 2.2rem;
   color: var(--veryDarkBlue);
   margin-bottom: 15px;
 }
 
 main .main-header p {
   color: var(--grayishBlue);
-  margin-bottom: 70px;
+  margin-bottom: 50px;
 }
 
 main .main-body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 80%;
+  width: 95%;
 }
 
 main .main-body .info-container {
@@ -105,21 +107,21 @@ main .main-body .calculator::after {
 
 main .main-body .info-card h1 {
   color: var(--veryDarkBlue);
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   margin-bottom: 10px;
 }
 
 main .main-body .info-card p {
   color: var(--grayishBlue);
-  font-size: 0.8rem;
-  padding-right: 50px;
+  font-size: 0.85rem;
+  padding-right: 20px;
   margin-bottom: 50px;
-  line-height: 1.3rem;
+  line-height: 1.5rem;
 }
 
 main .main-body .info-card .img-container {
-  height: 50px;
-  width: 50px;
+  height: 70px;
+  width: 70px;
   margin-left: auto;
 }
 
@@ -133,7 +135,7 @@ main .main-body .team {
 }
 
 /* media queries */
-@media only screen and (max-width: 1285px) {
+@media only screen and (max-width: 1301px) {
   main {
     padding-top: 80px;
     width: 90%;
