@@ -137,7 +137,6 @@ main .main-body .team {
 /* media queries */
 @media only screen and (max-width: 1301px) {
   main {
-    padding-top: 80px;
     width: 90%;
   }
 
