@@ -1,0 +1,176 @@
+/* import font */
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Poppins:wght@200;400;600&display=swap");
+
+/* variables and root styles */
+:root {
+  --red: hsl(0, 78%, 62%);
+  --cyan: hsl(180, 62%, 55%);
+  --orange: hsl(34, 97%, 64%);
+  --blue: hsl(212, 86%, 64%);
+  --veryDarkBlue: hsl(234, 12%, 34%);
+  --grayishBlue: hsl(229, 6%, 66%);
+  --veryLightGray: hsl(0, 0%, 98%);
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Normalization */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* body */
+
+body {
+  min-height: 100vh;
+  display: grid;
+  justify-items: center;
+}
+
+/* main */
+main {
+  min-height: 90vh;
+  width: 70%;
+  max-width: 1330px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main .main-header {
+  text-align: center;
+  max-width: 35%;
+}
+
+main .main-header h1 {
+  font-weight: 200;
+  color: var(--veryDarkBlue);
+}
+
+main .main-header h2 {
+  font-size: 2rem;
+  color: var(--veryDarkBlue);
+  margin-bottom: 15px;
+}
+
+main .main-header p {
+  color: var(--grayishBlue);
+  margin-bottom: 70px;
+}
+
+main .main-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+}
+
+main .main-body .info-container {
+  flex: 1 1 0;
+}
+
+main .main-body .info-card {
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 0 30px hsl(229, 6%, 85%);
+  margin: 12px;
+  padding: 30px;
+  position: relative;
+}
+
+main .main-body .info-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+}
+
+main .main-body .supervisor::after {
+  background-color: var(--cyan);
+}
+main .main-body .team::after {
+  background-color: var(--red);
+}
+main .main-body .karma::after {
+  background-color: var(--orange);
+}
+main .main-body .calculator::after {
+  background-color: var(--blue);
+}
+
+main .main-body .info-card h1 {
+  color: var(--veryDarkBlue);
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+main .main-body .info-card p {
+  color: var(--grayishBlue);
+  font-size: 0.8rem;
+  padding-right: 50px;
+  margin-bottom: 50px;
+  line-height: 1.3rem;
+}
+
+main .main-body .info-card .img-container {
+  height: 50px;
+  width: 50px;
+  margin-left: auto;
+}
+
+main .main-body .info-card .img-container img {
+  width: 100%;
+  height: 100%;
+}
+
+main .main-body .team {
+  margin-bottom: 30px;
+}
+
+/* media queries */
+@media only screen and (max-width: 1285px) {
+  main {
+    padding-top: 80px;
+    width: 90%;
+  }
+
+  main .main-header {
+    max-width: 100%;
+  }
+
+  main .main-body {
+    flex-direction: column;
+  }
+
+  main .main-header h1 {
+    font-weight: 200;
+    font-size: 1.5rem;
+    color: var(--veryDarkBlue);
+  }
+
+  main .main-header h2 {
+    font-size: 1.5rem;
+    color: var(--veryDarkBlue);
+    margin-bottom: 15px;
+  }
+
+  main .main-header p {
+    color: var(--grayishBlue);
+    margin-bottom: 50px;
+    font-size: 0.9rem;
+    padding: 0 15px;
+  }
+
+  main .main-body {
+    width: 100%;
+  }
+
+  main .main-body .info-container {
+    max-width: 410px;
+  }
+}
